@@ -29,7 +29,7 @@ tk.configure(bg="white")
 
 #Frame to store the fact
 fact_frame = Frame(tk, highlightbackground="blue", highlightthickness=1,width=500, height=380, bd= 0, bg='light green')
-fact_frame.pack()
+fact_frame.pack(expand=True)
 fact_frame.pack_propagate(False)
 
 
@@ -48,5 +48,10 @@ exit_button.grid(row=0, column=1)
 
 forward_button = Button(button_frame, text=">>", width=20, height=7)
 forward_button.grid(row=0, column=2, padx=3)
+
+
+
+fact_label = Label(fact_frame, text=fact_list[20], font = ('Times', 15))
+fact_label.place(x=100, y=150)
 
 tk.mainloop()
