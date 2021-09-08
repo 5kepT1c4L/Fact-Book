@@ -17,7 +17,7 @@ for fact in facts:
     fact_list.append(the_fact)
 
 
-print(fact_list)d
+print(fact_list)
 
 
 
