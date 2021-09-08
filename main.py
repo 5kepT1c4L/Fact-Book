@@ -149,8 +149,4 @@ def run_code():
 
 if __name__ == '__main__':
 
-    while True:
-
-        run_code()
-
-        time.sleep(600)
+    run_code()
