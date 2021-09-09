@@ -43,7 +43,6 @@ def run_code():
         fact_turn += 1
 
         if len(fact_list[fact_turn].split()) > 7 and len(fact_list[fact_turn].split()) < 13:
-
             fact_split = fact_list[fact_turn].split()
 
             fact_split.insert(6, "\n")
@@ -55,24 +54,24 @@ def run_code():
             fact_label.place(x=100, y=150)
 
         if len(fact_list[fact_turn].split()) <= 7:
-
             fact_label = Label(fact_frame, text=fact_list[fact_turn], font=('Times', 15))
 
             fact_label.place(x=100, y=150)
 
-        if len(fact_list[fact_turn].split()) >= 13:
-
+        if len(fact_list[fact_turn].split()) >= 13 and len(fact_list[fact_turn].split()) < 20:
             fact_split = fact_list[fact_turn].split()
 
-            fact_split.insert(6, "\n")
+            fact_split.insert(5, "\n")
 
-            fact_split.insert(12, "\n")
+            fact_split.insert(9, "\n")
+
+            fact_split.insert(15, "\n")
 
             final = " ".join(str(word) for word in fact_split)
 
             fact_label = Label(fact_frame, text=final, font=('Times', 15))
 
-            fact_label.place(x=100, y=150)
+            fact_label.place(x=0, y=150)
 
     def back():
 
@@ -101,7 +100,7 @@ def run_code():
 
             fact_label.place(x=100, y=150)
 
-        if len(fact_list[fact_turn].split()) >= 13:
+        if len(fact_list[fact_turn].split()) >= 13 and len(fact_list[fact_turn].split()) < 20:
 
             fact_split = fact_list[fact_turn].split()
 
@@ -109,11 +108,15 @@ def run_code():
 
             fact_split.insert(12, "\n")
 
+            fact_split.insert(15, "\n")
+
             final = " ".join(str(word) for word in fact_split)
 
             fact_label = Label(fact_frame, text=final, font=('Times', 15))
 
-            fact_label.place(x=100, y=150)
+            fact_label.place(x=0, y=150)
+
+
 
 
 
